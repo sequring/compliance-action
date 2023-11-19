@@ -1,0 +1,12 @@
+name: Compliance action
+description: Validate files License and Readme in repository
+author: Valentyn Nastenko
+inputs:
+  check_license:
+    description: "Is requred license file"
+    required: false
+    default: "false"
+runs:
+  using: "node16"
+  main: "dist/index.js"
+
